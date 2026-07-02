@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 type WorkCardProps = {
   title: string;
   description: string;
@@ -11,12 +13,9 @@ export const WorkCard = ({ title, description, href }: WorkCardProps) => {
       <p className='mt-3 flex-1 text-sm leading-6 text-neutral-300'>
         {description}
       </p>
-      <a
-        className='mt-6 w-fit rounded-full bg-white px-4 py-2 text-sm font-bold text-neutral-950'
-        href={href}
-      >
-        詳しく見る
-      </a>
+      <Button className='mt-6 w-fit rounded-full' variant='secondary' asChild>
+        <a href={href}>詳しく見る</a>
+      </Button>
     </article>
   );
 };
