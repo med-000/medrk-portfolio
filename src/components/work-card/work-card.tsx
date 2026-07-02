@@ -13,7 +13,7 @@ export const WorkCard = ({ title, description, href }: WorkCardProps) => {
       <p className='mt-3 flex-1 text-sm leading-6 text-neutral-300'>
         {description}
       </p>
-      <Button className='mt-6 w-fit rounded-full' variant='secondary' asChild>
+      <Button className='mt-6 w-fit rounded-full' variant='secondary'>
         <a href={href}>詳しく見る</a>
       </Button>
     </article>
